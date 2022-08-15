@@ -1,263 +1,356 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>DrivenEats</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap"
-            rel="stylesheet">
-    </head>
-    <body>
-        <div class="top-bar">
-            <div>
-                <h1>DrivenEats</h1>
-                <h2>Sua comida em 6 minutos</h2>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
         </div>
-        <div class="container">
-            <div class="titles">
-                Primeiro, seu prato
-            </div>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="./Images/macarrao-com-frango-na-panela-de-pressao-730x477.jpg">
-                    <div class="dish-name">
-                        Macarrão com frango
-                    </div>
-                    <div class="dish-description">
-                        Ideal para os dias mais corridos.
-                    </div>
+    </div>
+    <div class="container">
+        <div class="titles">
+            Primeiro, seu prato
+        </div>
+        <div class="dishes">
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/macarrao-com-frango-na-panela-de-pressao-730x477.jpg" />
+                <div class="dish-name">
+                    Macarrão com frango
+                </div>
+                <div class="dish-description">
+                    Ideal para os dias mais corridos.
+                </div>
+                <div class="dish-bottom-box">
                     <div class="dish-price">
                         R$14,90
                     </div>
-                    </button>
-                </div>
-                <div class="dish">
-                    <img src="./Images/espaguete-a-carbonara-0-730x477.webp">
-                    <div class="dish-name">
-                        Espaguete à carbonara
-                    </div>
-                    <div class="dish-description">
-                        Perfeita para fazer um almoço vapt-vupt.
-                    </div>
-                    <div class="dish-price">
-                        R$ 14,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/arroz-com-calabresa-na-pressao-facil-730x477.webp">
-                    <div class="dish-name">
-                        Arroz com calabresa
-                    </div>
-                    <div class="dish-description">
-                        Pegou pressão, resultado é saboroso.
-                    </div>
-                    <div class="dish-price">
-                        R$ 14,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/arroz-cremoso-colorido-730x477.webp">
-                    <div class="dish-name">
-                        Arroz colorido cremoso
-                    </div>
-                    <div class="dish-description">
-                        Arroz cremoso para abrilhantar a mesa.
-                    </div>
-                    <div class="dish-price">
-                        R$ 14,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/macarrao-ao-molho-branco-rapido-00-730x480.webp">
-                    <div class="dish-name">
-                        Macarrão ao molho branco
-                    </div>
-                    <div class="dish-description">
-                        Massa que vai bem em qualquer refeição.
-                    </div>
-                    <div class="dish-price">
-                        R$ 14,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/file-de-frango-cremoso-facil-00-1-730x480.webp">
-                    <div class="dish-name">
-                        Filé de frango cremoso
-                    </div>
-                    <div class="dish-description">
-                        Um prato coringa para o dia a dia.
-                    </div>
-                    <div class="dish-price">
-                        R$ 14,90
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
-            <div class="titles">
-                Agora, sua bebida
-            </div>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="./Images/água-aromatizada-de-abacaxi.jpg">
-                    <div class="dish-name">
-                        Água aromatiada de abacaxi
-                    </div>
-                    <div class="dish-description">
-                        Garrafa 500ml
-                    </div>
-                    <div class="dish-price">
-                        R$ 7,90
-                    </div>
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/espaguete-a-carbonara-0-730x477.webp" />
+                <div class="dish-name">
+                    Espaguete à carbonara
                 </div>
-                <div class="dish">
-                    <img src="./Images/suco-pessego.webp">
-                    <div class="dish-name">
-                        Suco de pêssego Natural One
-                    </div>
-                    <div class="dish-description">
-                        Garrafa 900ml
-                    </div>
-                    <div class="dish-price">
-                        R$ 7,90
-                    </div>
+                <div class="dish-description">
+                    Para fazer um almoço vapt-vupt.
                 </div>
-                <div class="dish">
-                    <img src="./Images/yopro.webp">
-                    <div class="dish-name">
-                        Bebida láctea proteica YoPro
-                    </div>
-                    <div class="dish-description">
-                        Caixinha 250ml
-                    </div>
+                <div class="dish-bottom-box">
                     <div class="dish-price">
-                        R$ 7,90
+                        R$ 14,90
                     </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/pirakids.webp">
-                    <div class="dish-name">
-                        Pirakids chocolate
-                    </div>
-                    <div class="dish-description">
-                        Caixinha 200ml
-                    </div>
-                    <div class="dish-price">
-                        R$ 7,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/pina-colada.png">
-                    <div class="dish-name">
-                        Piña Colada
-                    </div>
-                    <div class="dish-description">
-                        Copo 300ml
-                    </div>
-                    <div class="dish-price">
-                        R$ 7,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/selvagem.webp">
-                    <div class="dish-name">
-                        Catuaba
-                    </div>
-                    <div class="dish-description">
-                        Garrafa 1L
-                    </div>
-                    <div class="dish-price">
-                        R$ 7,90
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
-            <div class="titles">
-                Por fim, sua sobremesa
-            </div>
-            <div class="dishes">
-                <div class="dish">
-                    <img src="./Images/pudim.jpg">
-                    <div class="dish-name">
-                        Pudim
-                    </div>
-                    <div class="dish-description">
-                        Pudim de Leite condensado com calda de caramelo
-                    </div>
-                    <div class="dish-price">
-                        R$ 9,90
-                    </div>
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/arroz-com-calabresa-na-pressao-facil-730x477.webp" />
+                <div class="dish-name">
+                    Arroz com calabresa
                 </div>
-                <div class="dish">
-                    <img src="./Images/flan-chocolate.jpg">
-                    <div class="dish-name">
-                        Bolo mousse
-                    </div>
-                    <div class="dish-description">
-                        Recheio de mousse de Chocolate Ao Leite
-                    </div>
-                    <div class="dish-price">
-                        R$ 9,90
-                    </div>
+                <div class="dish-description">
+                    Pegou pressão, resultado é saboroso.
                 </div>
-                <div class="dish">
-                    <img src="./Images/mousse-manga.jpg">
-                    <div class="dish-name">
-                        Mousse
-                    </div>
-                    <div class="dish-description">
-                        Mousse de manga
-                    </div>
+                <div class="dish-bottom-box">
                     <div class="dish-price">
-                        R$ 9,90
+                        R$ 14,90
                     </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/Trufas.jpg">
-                    <div class="dish-name">
-                        Trufas
-                    </div>
-                    <div class="dish-description">
-                        Brigadeiro com rum e coberta com Chocolate
-                    </div>
-                    <div class="dish-price">
-                        R$ 9,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/folhado.jpg">
-                    <div class="dish-name">
-                        Folhado de damasco
-                    </div>
-                    <div class="dish-description">
-                        Discos de massa folhada com doce de damasco
-                    </div>
-                    <div class="dish-price">
-                        R$ 9,90
-                    </div>
-                </div>
-                <div class="dish">
-                    <img src="./Images/pe-de-moleque.jpg">
-                    <div class="dish-name">
-                        Pé de moleque
-                    </div>
-                    <div class="dish-description">
-                        Feito com Leite MOÇA, amendoim e açúcar.
-                    </div>
-                    <div class="dish-price">
-                        R$ 9,90
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
-            <div class="bottom-bar">
-                <button class="bottom-bar-order">
-                    Selecione os 3 itens para fechar o pedido
-                </button>
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/arroz-cremoso-colorido-730x477.webp" />
+                <div class="dish-name">
+                    Arroz colorido cremoso
+                </div>
+                <div class="dish-description">
+                    Arroz cremoso para abrilhantar a mesa.
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 14,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/macarrao-ao-molho-branco-rapido-00-730x480.webp" />
+                <div class="dish-name">
+                    Macarrão ao molho branco
+                </div>
+                <div class="dish-description">
+                    Massa que vai bem em qualquer refeição.
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 14,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dishSelected(this)">
+                <img src="./Images/file-de-frango-cremoso-facil-00-1-730x480.webp" />
+                <div class="dish-name">
+                    Filé de frango cremoso
+                </div>
+                <div class="dish-description">
+                    Um prato coringa para o dia a dia.
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 14,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="./script.js">
-        </script>
-    </body>
+        <div class="titles">
+            Agora, sua bebida
+        </div>
+        <div class="drinks">
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/água-aromatizada-de-abacaxi.jpg" />
+                <div class="dish-name">
+                    Água aromatiada de abacaxi
+                </div>
+                <div class="dish-description">
+                    Garrafa 500ml
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/suco-pessego.webp" />
+                <div class="dish-name">
+                    Suco de pêssego Natural One
+                </div>
+                <div class="dish-description">
+                    Garrafa 900ml
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/yopro.webp" />
+                <div class="dish-name">
+                    Bebida láctea proteica YoPro
+                </div>
+                <div class="dish-description">
+                    Caixinha 250ml
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/pirakids.webp" />
+                <div class="dish-name">
+                    Pirakids chocolate
+                </div>
+                <div class="dish-description">
+                    Caixinha 200ml
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/pina-colada.png" />
+                <div class="dish-name">
+                    Piña Colada
+                </div>
+                <div class="dish-description">
+                    Copo 300ml
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="drinkSelected(this)">
+                <img src="./Images/selvagem.webp" />
+                <div class="dish-name">
+                    Catuaba
+                </div>
+                <div class="dish-description">
+                    Garrafa 1L
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 7,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="titles">
+            Por fim, sua sobremesa
+        </div>
+        <div class="desserts">
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/pudim.jpg" />
+                <div class="dish-name">
+                    Pudim
+                </div>
+                <div class="dish-description">
+                    Leite condensado com calda
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/flan-chocolate.jpg" />
+                <div class="dish-name">
+                    Bolo mousse
+                </div>
+                <div class="dish-description">
+                    Recheio de mousse de Chocolate Ao Leite
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/mousse-manga.jpg" />
+                <div class="dish-name">
+                    Mousse
+                </div>
+                <div class="dish-description">
+                    Mousse de manga
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/Trufas.jpg" />
+                <div class="dish-name">
+                    Trufas
+                </div>
+                <div class="dish-description">
+                    Brigadeiro com rum e coberta com Chocolate
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/folhado.jpg" />
+                <div class="dish-name">
+                    Folhado de damasco
+                </div>
+                <div class="dish-description">
+                    Discos de massa folhada com doce de damasco
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="dish" onclick="dessertSelected(this)">
+                <img src="./Images/pe-de-moleque.jpg" />
+                <div class="dish-name">
+                    Pé de moleque
+                </div>
+                <div class="dish-description">
+                    Feito com Leite MOÇA, amendoim e açúcar.
+                </div>
+                <div class="dish-bottom-box">
+                    <div class="dish-price">
+                        R$ 9,90
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <button class="bottom-bar-order">
+                Selecione os 3 itens para fechar o pedido
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
 </html>
