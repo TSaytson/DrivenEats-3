@@ -1,4 +1,7 @@
-let selection = 0;
+let dish = false;
+let drink = false;
+let dessert = false;
+let mensagem;
 function dishSelected(seletor) {
     const element = document.querySelector(".dishes .dish-selected");
     if (element != null) {
@@ -7,8 +10,10 @@ function dishSelected(seletor) {
     }
     seletor.classList.remove("dish");
     seletor.classList.add("dish-selected");
-    selection++;
-    orderCart(selection);
+    const element2 = document.querySelector(".dish-selected .dish-name");
+    mensagem +=
+        dish = true;
+    orderCart(dish, drink, dessert);
 }
 function drinkSelected(seletor) {
     const element = document.querySelector(".drinks .dish-selected");
@@ -18,8 +23,8 @@ function drinkSelected(seletor) {
     }
     seletor.classList.remove("dish");
     seletor.classList.add("dish-selected");
-    selection++;
-    orderCart(selection);
+    drink = true;
+    orderCart(dish, drink, dessert);
 }
 function dessertSelected(seletor) {
     const element = document.querySelector(".desserts .dish-selected");
@@ -29,14 +34,16 @@ function dessertSelected(seletor) {
     }
     seletor.classList.remove("dish");
     seletor.classList.add("dish-selected");
-    selection++;
-    orderCart(selection);
+    dessert = true;
+    orderCart(dish, drink, dessert);
 }
-function orderCart(selection) {
-    const element = document.querySelector(".bottom-bar-order");
-    if (selection === 3) {
-        element.classList.remove("bottom-bar-order-selected");
-        element.classList.add("bottom-bar-order-selected");
-        element.innerHTML = "Fechar pedido";
+function orderCart(dish, drink, dessert) {
+    const element = document.querySelector(".escondido");
+    const element2 = document.querySelector(".bottom-bar-order");
+    if (dish && drink && dessert) {
+        element.classList.remove("escondido");
+        element2.classList.remove("bottom-bar-order-selected");
+        element2.classList.add("bottom-bar-order-selected");
+        element.innerHTML = "Fechar Pedido";
     }
 }

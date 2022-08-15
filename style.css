@@ -191,6 +191,10 @@ body {
     border: none;
 }
 
+.escondido {
+    display: none;
+}
+
 .bottom-bar-order-selected {
     width: 364px;
     height: 61px;
@@ -199,6 +203,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    font-size: 0;
+}
+
+.bottom-bar-order-selected a {
     color: #fff;
     font-family: "Roboto";
     font-size: 20px;
@@ -207,5 +216,5 @@ body {
     letter-spacing: 0.018em;
     font-weight: 700;
     cursor: pointer;
-    border: none;
+    text-decoration: none;
 }
